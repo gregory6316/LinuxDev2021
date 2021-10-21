@@ -1,0 +1,21 @@
+b 25
+run -100 100 3 > /dev/null
+watch i
+echo @@@
+p start
+echo @@@
+p end
+echo @@@
+p step
+set $j=0
+while $j < 27
+	c
+	set $j = $j + 1
+end
+set $j = 0
+while $j < 8
+	c
+	set $j = $j + 1
+	echo @@@
+	p i
+end

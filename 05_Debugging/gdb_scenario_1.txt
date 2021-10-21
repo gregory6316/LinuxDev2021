@@ -1,0 +1,16 @@
+b 25
+run 1 12 > /dev/null
+watch i if i % 5 == 0
+c
+echo @@@
+p start
+echo @@@
+p end
+echo @@@
+p step
+echo @@@
+p i
+c
+echo @@@
+p i
+
