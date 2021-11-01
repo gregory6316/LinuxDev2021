@@ -5,7 +5,12 @@ TEXTFILE="text.txt"
 cp $TEXTFILE $INFILE
 ./move $INFILE $OUTFILE
 cmp $TEXTFILE $OUTFILE
-
+#Test if incorrect num of arg 
+./move $INFILE 2> /dev/null
+if [ $? -ne 1 ]; then
+	echo "Test if incorrect num of arg not passed"
+	exit -1
+fi && rm -f $OUTFILE 
 #Test if infile open failed(not exists)
 cp $TEXTFILE $INFILE
 strace -e fault=openat:when=3:error=ENOENT ./move $INFILE $OUTFILE 2> /dev/null
