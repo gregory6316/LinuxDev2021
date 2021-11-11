@@ -5,6 +5,6 @@
 Запуск  
 ```make && ./rhasher```  
 Тесты  
-```make check  
+```make check```  
 sample_text.txt - текст для тестов
 
