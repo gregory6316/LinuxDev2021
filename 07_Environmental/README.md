@@ -1,7 +1,7 @@
 Сборка по умолчанию(без lreadline):  
 ```autoreconf -fisv && ./configure```  
 Сборка с lreadline:  
-```autoreconf -fisv && ./configure --enable-readline ``` 
+```autoreconf -fisv && ./configure --enable-readline ```  
 Запуск  
 ```make && ./rhasher```  
 Тесты  
