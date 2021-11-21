@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TEST=`echo "SAMPLETEXT" | sed -E "s/(SA[m-p]+).*(T[e-x]+)/==\1==\2==/"`
-RES=`./esub "SAMPLETEXT" "(SA[m-p]+).*(T[e-x]+)" "==\(1)==\(2)=="`
+TEST=`echo "SAMPLETEXT" | sed -E "s/(SA[M-P]+).*(T[E-X]+)/==\1==\2==/"`
+RES=`./esub "SAMPLETEXT" "(SA[M-P]+).*(T[E-X]+)" "==\(1)==\(2)=="`
 if [[ $TEST != $RES ]]; then
 	exit -1
 fi
