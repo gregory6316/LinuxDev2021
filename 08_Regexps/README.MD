@@ -15,4 +15,7 @@ make
 ```
 make check
 ```
-
+Удаление генератов:  
+```
+make gitclean
+```
